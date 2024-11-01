@@ -1,0 +1,122 @@
+{
+  "config": {
+    "configFile": "/home/sriram/retresco/Learning/playwright+TS/playwright.config.ts",
+    "rootDir": "/home/sriram/retresco/Learning/playwright+TS/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReport/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/sriram/retresco/Learning/playwright+TS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/sriram/retresco/Learning/playwright+TS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.47.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "putrequest.test.ts",
+      "file": "putrequest.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Query parameter in Playwright API testing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1454,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  bookingid: \u001b[33m12111\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'test'\u001b[39m,\n    lastname: \u001b[32m'user'\u001b[39m,\n    totalprice: \u001b[33m1000\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2018-01-01'\u001b[39m, checkout: \u001b[32m'2019-01-01'\u001b[39m },\n    additionalneeds: \u001b[32m'super bowls'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "[]\n"
+                    },
+                    {
+                      "text": "{ token: \u001b[32m'4b841da65f8c381'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "{\n  firstname: \u001b[32m'testing'\u001b[39m,\n  lastname: \u001b[32m'user'\u001b[39m,\n  totalprice: \u001b[33m1000\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2018-01-01'\u001b[39m, checkout: \u001b[32m'2019-01-01'\u001b[39m },\n  additionalneeds: \u001b[32m'orange'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-11-01T13:05:57.352Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc9c3be92c6b6fcff73f-2147b655459e62760864",
+          "file": "putrequest.test.ts",
+          "line": 4,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-11-01T13:05:57.140Z",
+    "duration": 1685.976,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
